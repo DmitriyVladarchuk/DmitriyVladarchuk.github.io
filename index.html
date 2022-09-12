@@ -25,18 +25,25 @@
             <li><a>http://example.com/</a></li>
             <li><a href="">Ссылка с пустым href</a></li>
             <li><a href="https://kubsu.ru/" rel="nofollow">ссылку, по которой запрещен переход поисковикам</a></li>
-            <li> <noidex><a href="https://kubsu.ru/" >запрещенную для индексации поисковиками</a></noidex> </li>
+            <li>  <a href="https://kubsu.ru/" >запрещенную для индексации поисковиками</a>
+                <noscript>
+                    <a href="https://kubsu.ru/" >запрещенную для индексации поисковиками</a>
+                </noscript>
+            </li>
             <li><p>Контекстная ссылка в <a href="https://kubsu.ru/">тексте абзаца</a></p></li>
             <li> <a href="https://kubsu.ru/" ><img src="img/logo_kubsu.jpg" alt="Кубгу"></a>  </li>
-            <li>
-                <map>
-                    <area shape="rect" coords = "25,25,125,125" href="https://e7.pngegg.com/pngimages/679/880/png-clipart-computer-mouse-mouse-mats-computer-keyboard-amazon-com-optical-mouse-shape-electronics-rectangle.png">
+            <li>Ссылки из пря<br>
+                <img src="map.jpg" usemap="f1" width="260" height="150">
+                <map name="f1">
+                    <area shape="rect" coords="25,25,125,125" href="https://kubsu.ru/">
+                    <area shape="circle" coords="200,75,50" href="https://kubsu.ru/">
                 </map>
             </li>
-            <li><a href="/about">относительная на страницу в текущем каталоге</a></li>
+            </li>
+            <li><a href="12.html">относительная на страницу в текущем каталоге</a></li>
             <li><a href="/about/menu">относительная на страницу в каталоге about</a></li>
-            <li><a href="../style.css">относительная на страницу в каталоге уровнем выше текущего</a></li>
-            <li><a href="../../1.py">относительная на страницу в каталоге двумя уровнями выше</a></li>
+            <li><a href="../11.html">относительная на страницу в каталоге уровнем выше текущего</a></li>
+            <li><a href="../../1.html">относительная на страницу в каталоге двумя уровнями выше</a></li>
             <li><a href="https://u.to/M_GBDQ ">Сокращенная ссылка на главную страницу GitHub</a></li>
             <li><a href="https://u.to/RuJJHA ">Сокращенная ссылка на внутреннюю</a></li>
         </ol>
