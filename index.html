@@ -32,8 +32,12 @@
             </li>
             <li><p>Контекстная ссылка в <a href="https://kubsu.ru/">тексте абзаца</a></p></li>
             <li> <a href="https://kubsu.ru/" ><img src="img/logo_kubsu.jpg" alt="Кубгу" ></a>  </li>
-            <li>Ссылки из пря<br>
-                
+            <li>
+                <img src="img/map.jpg" usemap="#f1" width="1024" height="550">
+                <map name="f1">
+                    <area shape="circle" coords="250,280,175" href="https://kubsu.ru/" alt="круг">
+                    <area shape="rect" coords="510,100,880,456" href="https://kubsu.ru/" alt="квадрат">
+                </map>
             </li>
             <li><a href="12.html">относительная на страницу в текущем каталоге</a></li>
             <li><a href="/about/menu">относительная на страницу в каталоге about</a></li>
@@ -45,9 +49,9 @@
         
         <h1>Форма</h1>
         <form id="form" action="/" method="post">
-            <label>Имя:<br><input name="1" value="текстовое поле"></label>
+            <label>Имя:<br><input name="1"></label>
             <br>
-            <label>e-mail:<br><input name="email" value="поле e-mail"></label>
+            <label>e-mail:<br><input name="email"></label>
             <br>
             <label>Дата рождения: <br><input name="3" value="" type="date"></label>
             <br>
