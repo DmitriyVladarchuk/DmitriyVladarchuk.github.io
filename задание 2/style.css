@@ -75,13 +75,12 @@ td, th{
     text-align: center;
 }
 
-#tb1{
+.tb1{
     background-color: #FFF;
 }
-#tb2{
+.tb2{
     background-color: lightsteelblue;
 }
-
 .form{
     margin-left: 15px;
 }
