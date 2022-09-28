@@ -1,0 +1,153 @@
+<!--  target="_blank"-открывает ссылку в другом окне -->
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Задание 3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div class="logotip">
+        <img src="images/logo.png" alt="logotip_L" class="logo">
+    </div>
+    <div class="nameSite">
+        <h1>Название сайта</h1>
+    </div>
+</header>
+<nav class="navigation">
+    <ul>
+        <li><a href="#table"> Ссылка на таблицу </a></li>
+        <li><a href="#form"> Ссылка на форму </a></li>
+        <li><a href="#footer"> Ссылка на footer </a></li>
+    </ul>
+</nav>
+<div class="content">
+    <h1>Список содержащий следущие гиперссылки</h1>
+    <ol>
+        <li><a href="http://example.com/">абсолютную гиперссылку на главную страницу сайта example.com;</a></li>
+        <li><a href="https://example.com/">абсолютную на главную сайта example.com в протоколе https;</a></li>
+        <li><a href="ftp://ftp.example.com/tutorial/1.exe">ссылка на файл на сервера FTP без авторизации</a></li>
+        <li><a href="ftp://DmitriyVladarchuk:1234567890@ftp.example.com">ссылка на файл на сервера FTP с
+            авторизацией</a></li>
+        <li><a href="https://ru.wikipedia.org/wiki/HTML#Общее_представление">ссылка на фрагмент страницы некоторого
+            сайта</a></li>
+        <li><a href="#form" title="Ссылка на форму">ссылка на фрагмент текущей страницы</a></li>
+        <li><a href="https://example.com/menu/e-mail">ссылка с двумя параметрами в URL</a></li>
+        <li>
+            <h3>список ссылок основной навигации сайта с подписями title</h3>
+            <ol>
+                <li><a href="https://metanit.com/" title="Ссылка на главную страницу Metanit">Metanit</a></li>
+                <li><a href="https://metanit.com/java/" title="Ссылка на раздел с java">Metanit раздел java</a></li>
+                <li><a href="https://metanit.com/java/tutorial/" title="Ссылка на java se">Metanit java se</a></li>
+            </ol>
+        </li>
+        <li><a>http://example.com/</a></li>
+        <li><a href="">Ссылка с пустым href</a></li>
+        <li><a href="https://kubsu.ru/" rel="nofollow">ссылку, по которой запрещен переход поисковикам</a></li>
+        <li><a href="https://kubsu.ru/">запрещенную для индексации поисковиками</a>
+            <noscript>
+                <a href="https://kubsu.ru/">запрещенную для индексации поисковиками</a>
+            </noscript>
+        </li>
+        <li><p>Контекстная ссылка в <a href="https://kubsu.ru/">тексте абзаца</a></p></li>
+        <li><a href="https://kubsu.ru/"><img src="images/logo_kubsu.jpg" alt="Кубгу"></a></li>
+        <li>
+            <img src="images/map.jpg" usemap="#f1" width="900" height="476" alt="">
+            <map name="f1">
+                <area shape="circle" coords="216,245,160" href="https://kubsu.ru/" alt="круг">
+                <area shape="rect" coords="454,83,781,401" href="https://kubsu.ru/" alt="квадрат">
+            </map>
+        </li>
+
+        <li><a href="12.html">относительная на страницу в текущем каталоге</a></li>
+        <li><a href="/about/menu">относительная на страницу в каталоге about</a></li>
+        <li><a href="../11.html">относительная на страницу в каталоге уровнем выше текущего</a></li>
+        <li><a href="../../1.html">относительная на страницу в каталоге двумя уровнями выше</a></li>
+        <li><a href="https://u.to/M_GBDQ ">Сокращенная ссылка на главную страницу GitHub</a></li>
+        <li><a href="https://u.to/RuJJHA ">Сокращенная ссылка на внутреннюю</a></li>
+    </ol>
+
+    <h1>Таблица</h1>
+    <table class="table" id="table">
+        <tr class="tb1">
+            <th>Колонка 1</th>
+            <th>Колонка 2</th>
+            <th>Колонка 3</th>
+        </tr>
+        <tbody>
+        <tr class="tb2">
+            <td colspan="3">Объединённая ячейка 1, 2, 3</td>
+        </tr>
+        <tr class="tb1">
+            <td>Ячейка 4</td>
+            <td>Ячейка 5</td>
+            <td>Ячейка 6</td>
+        </tr>
+        <tr class="tb2">
+            <td>Ячейка 7</td>
+            <td>Ячейка 8</td>
+            <td>Ячейка 9</td>
+        </tr>
+        <tr class="tb1">
+            <td colspan="3">Объединённая ячейка 10, 11, 12</td>
+        </tr>
+        <tr class="tb2">
+            <td>Ячейка 13</td>
+            <td>Ячейка 14</td>
+            <td>Ячейка 15</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <h1>Форма</h1>
+    <form id="form" action="/" method="post" class="form">
+        <label>Имя:<br><input name="1"></label>
+        <br>
+        <label>e-mail:<br><input name="email"></label>
+        <br>
+        <label>Дата рождения: <br><input name="3" value="" type="date"></label>
+        <br>
+        <br><br>
+        <p>Пол:</p>
+        <label class="label" for="male">М</label>
+        <input class="radio" id="male" name="gender" value="М" type="radio" checked="checked">
+        <label class="label" for="female">Ж </label>
+        <input class="radio" id="female" name="gender" value="Ж" type="radio">
+        <br>Rоличество конечностей<br>
+        <label for="four" class="label">4 </label>
+        <input id="four" class="radio" name="number_of_limbs" value="4" type="radio" checked="checked">
+        <label for="five" class="label">5 </label>
+        <input id="five" class="radio" name="number_of_limbs" value="5" type="radio">
+        <label for="six" class="label">6 </label>
+        <input id="six" class="radio" name="number_of_limbs" value="6" type="radio">
+        <br>
+        <label>
+            Cверхспособности: <br>
+            <select name="superpowers">
+                <option value="бессмертие">бессмертие</option>
+                <option value="прохождение сквозь стены" selected>прохождение сквозь стены</option>
+                <option value="левитация">левитация</option>
+            </select><br>
+        </label>
+        <br>
+        <label for="biography">Биография: <br></label>
+        <textarea id="biography" cols="40" rows="10" name="textbox"></textarea>
+        <br>
+
+        <input id="contract" type="checkbox" checked="checked" name="check-1">
+        <label for="contract">С контрактом ознакомлен (а)</label>
+        <br>
+        <input type="submit" value="Отправить" class="but1">
+    </form>
+</div>
+
+<footer id="footer">
+    <p class="textFooter">(с) Владарчук Дмитрий 2022</p>
+</footer>
+</body>
+</html>
