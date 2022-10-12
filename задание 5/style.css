@@ -1,0 +1,18 @@
+.calculator_box{
+    background-color: white;
+    display: block;
+    margin-left: 35%;
+    margin-right: 35%;
+    text-align: center;
+}
+
+body{
+    background-color: black;
+}
+
+h1{
+    color: white;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
