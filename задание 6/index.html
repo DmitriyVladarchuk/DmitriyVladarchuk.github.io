@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>задание 6</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <script src = "script.js" defer></script>
+        <link rel="package" href="1.json">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    </head>
+    <body>
+        <header>
+            <h1 class="text-center" style="color: white">Курс валют</h1>
+        </header>
+        <section>
+            <div class="container-lg">
+                <table class="table table-dark">
+                    <thead>
+                      <tr>
+                        <th scope="col">валюта</th>
+                        <th scope="col">цена в рублях</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">Доллар США</th>
+                        <td>61,7032</td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+            <br>
+            <div class="container-lg">
+                <h2 class="text-center" style="color: white">Цены на драгоценные металлы</h2>
+                <table class="table table-dark">
+                    <thead>
+                      <tr>
+                        <th scope="col">валюта</th>
+                        <th scope="col">цена в рублях</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">Золото</th>
+                        <td>3 271,89</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Серебро</th>
+                        <td>37,23</td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+            <div class="container-lg">
+                <h2 class="text-center" style="color: white">Цены на криптовалюты</h2>
+                <table class="table table-dark">
+                    <thead>
+                      <tr>
+                        <th scope="col">валюта</th>
+                        <th scope="col">цена в рублях</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">Биткоин</th>
+                        <td>19 162,3</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Эфириум</th>
+                        <td>1 297,42</td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+        </section>
+        
+        <div class= "container__calc2 p-2 mt-2 order-2 bg-light order-sm-4">
+            <label class="zag"> Расширенный калькулятор цены</label>
+            <p>Введите количество товара:
+              <input type="text" name="numberCalc" id="fieldCalc" >
+            </p>
+            
+        Тип товара:
+        <form class = "formaCalc">
+          <select name="prodType">
+            <option value="1">Курс доллара</option>
+            <option value="2">драгоценные металлы</option>
+            <option value="3">криптовалюта</option>
+          </select>
+          <div id="radios">
+            <label><input type="radio" name="prodOptions" value="option1"> Золото </label>
+            <label><input type="radio" name="prodOptions" value="option2"> Серебро </label>
+          </div>
+          <div id="checkboxes">
+            <label><input type="checkbox" name="prop1"> Биткоин </label>
+            <label><input type="checkbox" name="prop2"> Эфириум</label>
+          </div>
+          <div id="prodPrice">Выберите тип товара</div>
+        </form>
+          </div>
+    </body>
+</html>
