@@ -18,11 +18,8 @@ body{
 }
 
 #gallery{
-	/*color:white;
-	box-shadow: 10px 0px 20px 5px navajowhite;*/
 	background-color:white; 
     height: 60px;
-    /*box-shadow: 10px 0px 20px 5px navajowhite;*/
     color: white;
 }
 
@@ -30,18 +27,15 @@ body{
 	min-width: 0;
 }
 
-/* Ограничивающая оболочка */
 .slick-list {
 	overflow: hidden;
 }
 
-/* Лента слайдов */
 .slick-track{
 	display: flex;
 	align-items: flex-start;
 }
 
-/* Конкретный слайдер */
 .slider {
 	position: relative;
 	padding: 0px 60px;
